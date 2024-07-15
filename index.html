@@ -353,19 +353,15 @@
             </video>
           </center><br>
           <p>
-            We illustrate our method using two views captured at $\mathbf{x}_{i,t}^{(C)}$ bla bla a keyframe step, HabitatSim generates posed RGB-D images.
-            A select number of pixels from these images are sampled and stored in the observation database.
+            We illustrate our method using two images defined in each local camera coordinate system 
+            <font color="red">(C) </font>.
           </p>
           <p>
-            Utilizing a mixed ray sampling strategy (combining Random and Active methods), a subset of rays is selected from the current keyframe and the database.
-            These rays are then processed through the Hybrid Scene Representation (Map) to deduce the corresponding color, Signed Distance Function (SDF), depth, and uncertainty values.
+
           </p>
           <p>
-            The predictions derived from this process facilitate uncertainty-aware bundle adjustment, updating both the scene's geometry and reconstruction uncertainty.
           </p>
           <p>
-            Subsequently, the Map is refreshed, and our novel uncertainty-aware planning algorithm is employed to determine a goal and trajectory based on the SDFs and uncertainties.
-            The agent then executes the planned action.
           </p>
           <br> 
           <br> 
