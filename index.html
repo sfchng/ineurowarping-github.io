@@ -464,7 +464,7 @@
           </div>
           <b>Joint optimization of homography and neural field estimation</b>: 
           Overparameterization benefits the joint optimization of homography and neural field estimation. We highlight the importance of invertibility in modeling rigid warp functions using neural network.
-          By explicitly modeling the inversion through learning an INN (Explicit-Invertible MLP), we achieve superior performance compared to using an Implicit-Invertible MLP approach, which only enforce approximate invertibility.
+          By explicitly modeling the inversion through learning an INN (Explicit-Invertible MLP), we achieve superior performance in pose convergence compared to using an Implicit-Invertible MLP approach, which only enforce approximate invertibility.
           Please refer to our paper for more details and statistical runs.
           <br>
 
@@ -495,7 +495,9 @@
               </video>
             </div>
           </div>
-          <b>Localization problem</b>: XXXXX
+          <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis that sheds light on the empirical effectiveness of our approach compared to L2G method,
+          which uses a MLP to predict SE(3) transformations. Our method leverages the concept of an INN, which predict homeomorphisms - continuous, invertible transformations not limited to the rigid motions of the SE(3) group.
+          
 
           <h3 class="title is-4">Qualitative Results on LLFF Scenes</h3> 
           <div class="grid-container">
