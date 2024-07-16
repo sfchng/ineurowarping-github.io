@@ -406,7 +406,7 @@
           <div class="grid-container_multiples">
             <div class="grid-item">
               <div>
-                <span style="display: inline; text-align:center;margin-left: 80px "><b class="green-text">BARF</b>
+                <span style="display: inline; text-align:center;margin-left: 80px "><b class="green-text">BARF<sup>1</sup></b>
                 </span>
               </div>
             </div>
@@ -495,7 +495,7 @@
               </video>
             </div>
           </div>
-          <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis that sheds light on the empirical effectiveness of our approach compared to an overparameterized method L2G <sup>1</sup> method,
+          <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis that sheds light on the empirical effectiveness of our approach compared to an overparameterized method L2G <sup>2</sup> method,
           which uses a MLP to predict SE(3) transformations. Note that when using our approach for pose estimation, we observe noticeable deformation in the intermediate rendered results.
           These deformations indicate that the INN predicts general homeomorphisms - continuous and invertible transformations - not limited to the rigid motions of the SE(3) group.
           This results in a flexible optimization trajectory that is not prone to a suboptimal minima, offering an advantage over predicting within the SE(3) group.
@@ -782,7 +782,8 @@
 </div>
 <div class="container is-max-desktop content">
   <h2 class="title" style="text-align: center;">References</h2>
-  [1] Chen, Yue, Xingyu Chen, Xuan Wang, Qi Zhang, Yu Guo, Ying Shan, and Fei Wang. <em>Local-to-global registration for bundle-adjusting neural radiance fields</em>." In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023.
+  [1] Lin, Chen-Hsuan, Wei-Chiu Ma, Antonio Torralba, and Simon Lucey. <em>Barf: Bundle-adjusting neural radiance fields</em>. In Proceedings of the IEEE/CVF international conference on computer vision (ICCV), 2021.
+  [2] Chen, Yue, Xingyu Chen, Xuan Wang, Qi Zhang, Yu Guo, Ying Shan, and Fei Wang. <em>Local-to-global registration for bundle-adjusting neural radiance fields</em>. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2023.
 </div> 
 sk
 <footer class="footer">
