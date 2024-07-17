@@ -468,7 +468,7 @@
           Please refer to our paper for more details and statistical runs.
           <br>
 
-          <h3 class="title is-4">Homeomorphism perspective: A qualitative analysis on a single-view pose estimation</h3> 
+          <h3 class="title is-4">Homeomorphism perspective: A qualitative analysis</h3> 
           <div class="grid-container">
             <div class="grid-item">
               <div>
@@ -495,8 +495,8 @@
               </video>
             </div>
           </div>
-          <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis that sheds light on the empirical effectiveness of our approach compared to an overparameterized method L2G <sup>2</sup> method,
-          which uses a MLP to predict SE(3) transformations. Note that when using our approach for pose estimation, we observe noticeable deformation in the intermediate rendered results.
+          <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis on a single-view pose estimation that sheds light on the empirical effectiveness of our approach compared to an overparameterized method L2G <sup>2</sup> method,
+          which uses a MLP to predict SE(3) transformations. We superimposed the intermediate rendered images with <b class="red-text">Groundtruth<b class="red-text"></b> (lighter visualization) Note that when using our approach for pose estimation, we observe noticeable deformation in the intermediate rendered results.
           These deformations indicate that the INN predicts general homeomorphisms - continuous and invertible transformations - not limited to the rigid motions of the SE(3) group.
           This results in a flexible optimization trajectory that is not prone to a suboptimal minima, offering an advantage over predicting within the SE(3) group.
 
