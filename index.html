@@ -496,16 +496,16 @@
             </div>
           </div>
           <b>Neural Invertible Warp vs. L2G</b>: We present a qualitative analysis on a single-view pose estimation that sheds light on the empirical effectiveness of our approach compared to an overparameterized method L2G <sup>2</sup> method,
-          which uses a MLP to predict SE(3) transformations. We superimposed the intermediate rendered images with <b><font color="red">Groundtruth </font></b> (lighter visualization) Note that when using our approach for pose estimation, we observe noticeable deformation in the intermediate rendered results.
+          which uses a MLP to predict SE(3) transformations. We superimposed the intermediate rendered images with <b><font color="red">Groundtruth </font></b> (lighter visualization). Note that when using our approach for pose estimation, we observe noticeable deformation in the intermediate rendered results.
           These deformations indicate that the INN predicts general homeomorphisms - continuous and invertible transformations - not limited to the rigid motions of the SE(3) group.
           This results in a flexible optimization trajectory that is not prone to a suboptimal minima, offering an advantage over predicting within the SE(3) group.
 
           <h3 class="title is-3">Demo: Qualitative Results </h3> 
           <b> How to interpret this visualization</b>: This visualization demonstrates that our proposed method renders novel view synthesis results closer to the Groundtruth (GT) compared to existing methods as it
-          converges to a better pose estimation. You can slide the cursor to compare the differences and observe any misalignments due to pose inaccuracies. An example snapshot is provided below
-          <center>
+          converges to a better pose estimation. You can slide the cursor to compare the differences and observe any misalignments due to pose inaccuracies. 
+          <!--<center>
             <img src="./static/images/examples.png"  width="75%">
-          </center>  
+          </center>-->  
 
           <h3 class="title is-4">Qualitative Results on LLFF Scenes</h3>      
           <div class="grid-container">
